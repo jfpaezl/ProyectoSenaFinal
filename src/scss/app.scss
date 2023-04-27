@@ -1,0 +1,19 @@
+@import 'base/normalize';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/globales';
+@import 'base/utilidades';
+@import 'base/botones';
+
+//layout
+@import 'layout/navegacion';
+@import 'layout/inicio';
+@import 'layout/anuncios';
+@import 'layout/testimonios';
+@import 'layout/prueba';
+@import 'layout/tienda';
+@import 'layout/cotizador';
+
+//internas
+@import 'internas/modelos';
+@import 'internas/admin';

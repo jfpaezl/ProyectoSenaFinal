@@ -1,0 +1,50 @@
+.alerta{
+    padding: .5rem;
+    text-align: center;
+    color: $blanco;
+    font-weight: $bold;
+    text-transform: uppercase;
+    margin: 1rem 0;
+
+    &.error{
+        background-color: $rojo;
+    }
+}
+table.modelos{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    width: 100%;
+    border-spacing: 0;
+    color: $blanco;
+    text-align: center;
+
+    thead{
+        background-color: $verde;
+
+        th {
+            color: $blanco;
+            padding: 2rem;
+        }
+    }
+    tbody{
+        img{
+            background-color: $blanco;
+            border-radius: 0.5rem;
+        }
+        
+        tr{
+            background-color: $azul;
+            border-radius: 2rem;
+            
+        }
+    }
+}
+.imagen-tabla{
+    width: 10rem;
+}
+
+.hiden{
+    @include maxTablet{
+        display: none;
+    }
+}

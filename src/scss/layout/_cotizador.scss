@@ -1,0 +1,61 @@
+
+.cotizador{
+    @include tablet{
+        @include grid(2, 2rem);
+    }
+    border-style: double;
+    border-color: $verde;
+    border-radius: 2rem;
+    border-width: 5px;
+    margin-bottom: 2rem
+
+
+}
+
+
+.base-delantal{
+    @include tablet{
+        @include grid(2, 2rem);
+    }
+}
+.select{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+}
+input:not([type="submit"]), 
+textarea,
+select {
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    background-color: $verde;
+    border: 1px solid $negro;
+    border-radius: 2rem;
+    color: $blanco;
+    font-weight: $bold;
+    margin-bottom: 1rem;
+}
+textarea {
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    align-items: center;
+}
+label{
+    color: $blanco;
+    font-weight: $bold;
+    
+}
+.picture{
+    background-color: $blanco;
+    border-radius: 2rem;
+    margin: 1rem;
+    width: auto;
+    display: flex;
+    align-items: center;
+    img{
+        border-radius: 2rem;
+    }
+}

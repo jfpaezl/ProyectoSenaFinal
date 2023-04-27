@@ -1,0 +1,46 @@
+.testimonio{
+    h2{
+        color: $verde;
+        font-weight: $black;
+    }
+    h3, p{
+        color: $blanco;
+    }
+    p{
+        margin-right: 1rem;
+    }
+
+    .contenerdor-testimonios{
+        border: solid;
+        margin-bottom: 2.5rem;
+        border-radius: 2rem;
+        border-color: $verde;
+        .imagen-testiminio{
+            padding: 2rem;
+            @include tablet{
+                height: 30rem;
+                display: flex;
+                align-items: center;
+            }
+            
+        }
+        img{
+            
+            height: 100%;
+            width: cover;
+            border-radius: 2rem;
+            @include tablet{
+                margin-left: 5rem;
+                margin-right: 5rem;
+            }
+            
+        }
+        @include tablet{
+            
+            display: grid;
+            gap: 4rem;
+            grid-template-columns: 1fr 2fr;
+        }
+    }
+}
+

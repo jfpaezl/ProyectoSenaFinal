@@ -1,0 +1,104 @@
+.contenedor-header{
+    background-color: $azul;
+    align-items: center;
+    @include tablet{
+        height: auto;
+        padding: 1rem;
+    }
+    
+}
+.barra{
+    display: flex;
+    flex-direction: column;
+    .menu-movil{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+    }
+    
+    padding: 1rem 0;
+    @include tablet{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+}
+
+.divlog{
+    a{
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+}
+
+.logo{
+    width: auto;
+    height: 10rem;
+    
+    
+    @include tablet{
+        height: 10rem;
+        align-items: center;
+    }
+}
+
+.navegacion, .login{
+    display: none;
+    @include tablet{
+        display: flex;
+        align-items: center;
+    }
+    a{
+        text-decoration: none;
+        text-align: center;
+        color: $blanco;
+        display: block;
+        padding: 0.5rem;
+        background-color: $verde;
+        border-radius: .5rem;
+        font-weight: $bold;
+        margin: 1rem 2rem 0;
+        
+        @include tablet{
+            margin: 0 2rem 0 0;
+            &:last-of-type{
+                margin-right: 0;
+            }
+        }
+    }
+    
+}
+
+.footer{
+    background-color: $azul;
+    padding: 2rem;
+}
+.copyrithing{
+    color: $blanco;
+    text-align: center;
+}
+
+//menu de Hamburgueza
+.mobile-menu{
+    @include tablet{
+        display: none;
+    }
+    img{
+        height: 5rem;
+        align-items: center;
+    }
+}
+
+.mostrar{
+    @include telefonoMenu{
+        display: block;
+    }
+    @include telefonoMenu2{
+        display: block;
+    }
+}
+

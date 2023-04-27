@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="build/css/app.css">
+    <title>Proyecto Sena</title>
+</head>
+<body>
+            
+    <header class="contenedor-header">
+        <div class="barra"> 
+            <div class="menu-movil">
+                <div class="divlog">
+                    <a href="/" ><img class="logo" src="src/img/logo.png" alt="imagen logo"></a>
+                </div>
+                <div class="mobile-menu">
+                    <img src="build/img/barras.svg" alt="icono menu responsibe menu">
+                </div>
+            </div>          
+            
+            <div class=" navegacion">
+                <a href="tienda.html" class="boton">Tienda</a>
+                <a href="cotizador.html" class="boton">Cotizador</a>
+                <a href="nosotros.html" class="boton">Sobre Nosotros</a>
+            </div>
+            <div class="login">
+                <a href="#">Iniciar Sesion</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <h1>prueba</h1>
+        <h1>Modelos</h1>
+
+        <section class="contenedor-formulario">
+            <form class="formulario" enctype="multipart/form-data">
+                <div class="base-delantal">
+                    <div class="select">
+                        <label for="modelo">Modelos</label>
+                        <select>
+                            <option value="1">Delantal en Cuero</option>
+                            <option value="2">Delantal en Cuerina</option>
+                            <option value="3">Delantal en Tela</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <label for="imagen">imagen</label>
+                    <input type="file" id="imagen" accept="image/jpeg image/png">
+                    </div> 
+                </div>
+                <div class="select">
+                    <label for="">Descripcción</label>
+                    <textarea id="descripccion"></textarea>
+                </div>
+                <div class="select">
+                    <label for="precio">Precio</label>    
+                    <input type="number" id="precio" placeholder="precio modelo"></input>
+                </div>
+            </form>
+            <div class="select">
+                <a href="#" class="boton-contacto ">GUARDAR</a>
+            </div>    
+        </section>
+        
+    </main>
+
+    <footer class="footer">
+
+        <div class="navegacion">
+            <a href="tienda.html" class="boton">Tienda</a>
+            <a href="cotizador.html" class="boton">Cotizador</a>
+            <a href="nosotros.html" class="boton">Sobre Nosotros</a>
+        </div>
+        <p class="copyrithing">Todos los Derechos Reserbados <?php echo date('Y');?> &copy;</p>
+        </footer>
+        <script src="/build/js/bundle.min.js"></script>
+        </body>
+        </html>

@@ -1,0 +1,46 @@
+
+
+.portada{
+    background-image: url(../../../build/img/2.png);
+    background-image: url(../../../build/img/2.webp);  
+    background-position: center center;
+    background-size: cover;
+
+    h1{
+        margin: 0;
+        padding-top: 3rem;
+    }
+    p{
+        color: $blanco;
+        margin-left: 2rem;
+    }
+    a{
+        color: $verde;
+        margin-left: 2rem;  
+    }
+    @include tablet{
+        @include grid(2, 2rem);
+        height: 40rem;
+    }
+}
+.imagen-contacto{
+    background-image: url(../../../build/img/4.png);  
+    background-image: url(../../../build/img/4.webp);  
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet{
+        padding: 10rem 0;
+    }
+    p{
+        color: $blanco;
+        text-align: center;
+    }
+    h2{
+        color: $blanco;
+        font-weight: $black;
+    }
+    
+}

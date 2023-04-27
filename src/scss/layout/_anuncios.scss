@@ -1,0 +1,51 @@
+@include tablet{
+    .contenedor-anuncio{
+        @include grid (3, 2rem)
+    }
+}
+.anuncio{
+    border-style: double;
+    border-color: $verde;
+    border-radius: 2rem;
+    border-width: 5px;
+    
+    .contenedor-anuncio{
+        padding: 2rem;
+    }
+ 
+    h3{
+        margin: 0;
+        color: $verde;
+        font-weight: $bold;
+    } 
+    
+    p{
+        margin: 0;
+        color: $blanco;
+        padding: 2rem;
+    }
+    picture{
+        background-color: $blanco;
+        border-radius: 2rem;
+        margin: 1rem;
+        width: auto;
+        display: flex;
+        align-items: center;
+    }
+    img{
+        border-radius: 2rem;
+        display: block;
+        justify-content: center;
+    }
+
+    .enlace{
+        padding: 1rem 2rem;
+    }
+}
+
+.seccion{
+    h2{
+        color: $verde;
+        font-weight: $bold;
+    }
+}

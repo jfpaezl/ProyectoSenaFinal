@@ -1,0 +1,18 @@
+.boton-verde{
+    @include boton ($verde);
+    border-radius: 1rem;
+    display: block;
+}
+
+.boton-contacto{
+    @include boton ($verde);
+    border-radius: 1rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+.boton-rojo{
+    @include boton($rojo);
+    border-radius: 1rem;
+    display: block;
+    width: 100%;
+}
